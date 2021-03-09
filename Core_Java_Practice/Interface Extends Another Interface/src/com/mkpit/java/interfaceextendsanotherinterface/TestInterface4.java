@@ -1,10 +1,15 @@
 package com.mkpit.java.interfaceextendsanotherinterface;
 
-public class TestInterface4 implements Showable{
-    public void print(){System.out.println("Hello");}
-    public void show(){System.out.println("Welcome");}
+public class TestInterface4 implements Showable {
+    public void print() {
+        System.out.println("Hello");
+    }
 
-    public static void main(String args[]){
+    public void show() {
+        System.out.println("Welcome");
+    }
+
+    public static void main(String args[]) {
         TestInterface4 obj = new TestInterface4();
         obj.print();
         obj.show();

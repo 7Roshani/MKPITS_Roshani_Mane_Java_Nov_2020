@@ -1,6 +1,6 @@
 package com.mkpits.java.abstractclass;
 
-public class B implements A{
+public class B implements A {
     @Override
     public void a() {
 
@@ -11,7 +11,9 @@ public class B implements A{
 
     }
 
-    public void c(){System.out.println("I am c");}
+    public void c() {
+        System.out.println("I am c");
+    }
 
     @Override
     public void d() {
