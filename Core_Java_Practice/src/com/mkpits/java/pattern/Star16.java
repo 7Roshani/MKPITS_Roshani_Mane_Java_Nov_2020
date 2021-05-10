@@ -1,0 +1,45 @@
+package com.mkpits.java.pattern;
+
+import java.util.Scanner;
+
+public class Star16 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the number of rows: ");
+
+        int rows = sc.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+
+            for (int j = i; j < rows; j++) {
+
+                System.out.print(" ");
+
+            }
+
+            for (int k = 1; k <= (2 * i - 1); k++) {
+
+                if (k == 1 || i == rows || k == (2 * i - 1)) {
+
+//Logic for printing Pattern
+
+                    System.out.print("*"); //Print Star
+
+                } else {
+
+                    System.out.print(" ");  //Print Spaces
+
+                }
+
+            }
+
+            System.out.println("");
+
+        }
+
+        sc.close();
+
+    }
+}
